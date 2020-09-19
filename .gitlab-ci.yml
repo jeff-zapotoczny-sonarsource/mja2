@@ -1,0 +1,13 @@
+image: maven:latest
+variables:
+  SONAR_TOKEN: "SQ_TOKEN=9cbed354721045a91fd778617ad4741c4f21bdd9"
+  SONAR_HOST_URL: "http://jeffz.ngrok.io"
+  GIT_DEPTH: 0
+sonarqube-check:
+  script:
+    - mvn verify sonar:sonar 
+    #-Dsonar.qualitygate.wait=true
+  allow_failure: true
+  only:
+    - merge_requests
+    - master
