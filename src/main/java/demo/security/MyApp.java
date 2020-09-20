@@ -33,12 +33,12 @@ public class MyApp {
     }
 
     public void saveData(HttpServletRequest request) throws IOException {
-        String data = request.getParameter("data");
+        /* String data = request.getParameter("data");
         File tempDir;
         tempDir = File.createTempFile("", ".");
         tempDir.delete();
         tempDir.mkdir();
-        Files.exists(Paths.get("/tmp/", data));
+        Files.exists(Paths.get("/tmp/", data)); */
     }
 
     public void processInput() {
