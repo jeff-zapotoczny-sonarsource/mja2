@@ -21,20 +21,20 @@ public class Utils {
         response.addCookie(c); */
     }
 
-    public KeyPair makeKey() {
-/*         KeyPairGenerator keyPairGen;
+/*     public KeyPair makeKey() {
+        KeyPairGenerator keyPairGen;
         try {
             keyPairGen = KeyPairGenerator.getInstance("RSA");
             keyPairGen.initialize(512);
             return keyPairGen.genKeyPair();
         } catch (NoSuchAlgorithmException e) {
             return null;
-        } */
+        }
     }
-
+ */
     public byte[] generateRandomBytes() {
-/*         byte[] bytes = new byte[20];
-        rando.nextBytes(bytes); 
-        return bytes; */
+        byte[] bytes = new byte[20];
+        /* rando.nextBytes(bytes);  */
+        return bytes;
     }
 }
