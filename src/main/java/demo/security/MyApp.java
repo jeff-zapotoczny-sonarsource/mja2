@@ -24,12 +24,12 @@ public class MyApp {
     }
 
     public void getUser(HttpServletRequest request, Connection connection) {
-        String user = request.getParameter("user");
+/*         String user = request.getParameter("user");
         try {
             dataManager.getUser(connection, user);
         } catch (SQLException ex) {
             logger.log(Level.SEVERE, ex.getMessage());
-        }
+        } */
     }
 
     public void saveData(HttpServletRequest request) throws IOException {
@@ -42,15 +42,15 @@ public class MyApp {
     }
 
     public void processInput() {
-        String myInput = framework.getInput("stuff");
+/*         String myInput = framework.getInput("stuff");
         framework.processParam(myInput);
-        dataManager.storeData(myInput);
+        dataManager.storeData(myInput); */
     }
 
     public void processInputSafely() {
-        String myInput = framework.getInput("stuff");
+/*         String myInput = framework.getInput("stuff");
         framework.verifyData(myInput);
         framework.processParam(myInput);
-        dataManager.storeData(myInput);
+        dataManager.storeData(myInput); */
     }
 }
