@@ -1,6 +1,0 @@
-projectKey=demo:security
-serverUrl=http://jeffz.ngrok.io
-serverVersion=8.4.1.35646
-dashboardUrl=http://jeffz.ngrok.io/dashboard?id=demo%3Asecurity
-ceTaskId=AXSrYDi-1pcxB6y-hNWb
-ceTaskUrl=http://jeffz.ngrok.io/api/ce/task?id=AXSrYDi-1pcxB6y-hNWb

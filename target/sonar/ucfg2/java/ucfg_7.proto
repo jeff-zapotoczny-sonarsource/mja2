@@ -1,59 +1,0 @@
-
-]demo.security.DataManager#getThing(Ljava/sql/Connection;Ljava/lang/String;)Ljava/lang/String;i
-_/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/DataManager.java ("4*Œ
-2i
-_/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/DataManager.java (fª
-§
-i
-_/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/DataManager.java (f
-rsjava.sql.ResultSet"__id*
-
-%2java.sql.ResultSetéæ
-i
-_/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/DataManager.java ("
-%3java.lang.String"1java.sql.ResultSet#getString(I)Ljava/lang/String;*
-
-rsjava.sql.ResultSet*22getString(I)*
-1*µ
-3i
-_/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/DataManager.java (?±
-®
-i
-_/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/DataManager.java (?
-	statementjava.sql.Statement"__id*
-
-%0java.sql.StatementØ
-Õ
-i
-_/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/DataManager.java6 (e
-%1java.lang.String"__concat*)'
-%select thing from others WHERE param=*
-
-paramjava.lang.String°­
-i
-_/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/DataManager.java (f
-%2java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*!
-
-	statementjava.sql.Statement*
-
-%1java.lang.String2 executeQuery(Ljava/lang/String;)*
-2*ñ
-4i
-_/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/DataManager.java# (-ûø
-i
-_/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/DataManager.java# (?
-%0java.sql.Statement"9java.sql.Connection#createStatement()Ljava/sql/Statement;*#
-!
-
-connectionjava.sql.Connection2createStatement()*
-3*ö
-1i
-_/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/DataManager.java (#"…
-i
-_/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/DataManager.java (#
-
-%3java.lang.String:!
-
-connectionjava.sql.Connection:
-paramjava.lang.StringB
-demo.security.DataManager
