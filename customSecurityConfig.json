@@ -1,0 +1,31 @@
+{
+  "sources": [
+    {
+      "methodId": "demo.security.ProprietaryFramework#getInput(Ljava/lang/String;)Ljava/lang/String;"
+    }
+  ],
+  "sanitizers": [
+    {
+      "methodId": "demo.security.ProprietaryFramework#verifyData(Ljava/lang/String;)V",
+      "args": [
+        1
+      ]
+    }
+  ],
+  "passthroughs": [
+    {
+      "methodId": "demo.security.ProprietaryFramework#processParam(Ljava/lang/String;)V",
+      "args": [
+        1
+      ]
+    }
+  ],
+  "sinks": [
+    {
+      "methodId": "demo.security.ProprietaryFramework#storeData(Ljava/lang/String;)V",
+      "args": [
+        1
+      ]
+    }
+  ]  
+}

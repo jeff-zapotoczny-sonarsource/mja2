@@ -7,28 +7,28 @@ import java.sql.Statement;
 
 public class DataManager {
 
+    ProprietaryFramework framework;
+
     public DataManager() {
-        // no need to do anything here
+        framework = new ProprietaryFramework();
     }
 
-    public String taintedSQL(Connection connection, String user) throws SQLException {
-        String query = "SELECT userid FROM users WHERE username = '" + user + "'";
-        Statement statement = connection.createStatement();
-        ResultSet resultSet = statement.executeQuery(query);
-        return resultSet.getString(1);
+    public String getUser(Connection connection, String user) throws SQLException {
+        try (Statement statement = connection.createStatement();
+                ResultSet resultSet = statement
+                        .executeQuery("SELECT userid FROM users WHERE username = '" + user + "'");) {
+            return resultSet.getString(1);
+        }
     }
 
-    public String hotspotSQL(Connection connection, String user) throws Exception {
-        Statement statement = null;
-        statement = connection.createStatement();
-        ResultSet rs = statement.executeQuery("select userid from users WHERE username=" + user);
-        return rs.getString(1);
+    public String getThing(Connection connection, String param) throws SQLException {
+        try (Statement statement = connection.createStatement();
+                ResultSet rs = statement.executeQuery("select thing from others WHERE param=" + param);) {
+            return rs.getString(1);
+        }
     }
 
-    public void storeData(String input) {
-        // Empty (fake) sink
-        // To be a real sink this should normally build an SQL query from the input
-        // parameter
+    public void storeData(String data) {
+        framework.storeData(data);
     }
-
 }

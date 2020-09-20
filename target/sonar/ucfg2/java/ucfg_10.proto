@@ -1,0 +1,54 @@
+
+4demo.security.Utils#weakKey()Ljava/security/KeyPair;c
+Y/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/Utils.java ("6*ï
+2c
+Y/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/Utils.java (+"„
+c
+Y/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/Utils.java (+
+
+%2java.security.KeyPair*÷
+3c
+Y/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/Utils.java (‡„
+c
+Y/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/Utils.java (*
+%2java.security.KeyPair"Bjava.security.KeyPairGenerator#genKeyPair()Ljava/security/KeyPair;*.
+,
+
+keyPairGenjava.security.KeyPairGenerator2genKeyPair()*
+2* 
+4c
+Y/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/Utils.java (<Ä
+Á
+c
+Y/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/Utils.java (<,
+
+keyPairGenjava.security.KeyPairGenerator"__id*&
+$
+%0java.security.KeyPairGeneratoréæ
+c
+Y/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/Utils.java (&
+
+%1void"-java.security.KeyPairGenerator#initialize(I)V*.
+,
+
+keyPairGenjava.security.KeyPairGenerator*2€2initialize(I)*
+3*‹
+5c
+Y/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/Utils.java ()›
+˜
+c
+Y/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/Utils.java (<$
+%0java.security.KeyPairGenerator"^java.security.KeyPairGenerator#getInstance(Ljava/lang/String;)Ljava/security/KeyPairGenerator;*"" 
+java.security.KeyPairGenerator*
+RSA*
+4*”
+6c
+Y/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/Utils.java ($¤
+¡
+c
+Y/Users/jeffzapotoczny/sonarsrc/forrester-sast-wave/src/main/java/demo/security/Utils.java ($,
+
+keyPairGenjava.security.KeyPairGenerator"__id*
+""*
+5B
+demo.security.Utils
