@@ -1,3 +1,6 @@
 {
-    "java.configuration.updateBuildConfiguration": "automatic"
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "sonarlint.connectedMode.project": {
+        "projectKey": "demo:security"
+    }
 }
