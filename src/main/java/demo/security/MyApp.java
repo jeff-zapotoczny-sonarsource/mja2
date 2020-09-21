@@ -1,29 +1,44 @@
 package demo.security;
 
+import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 
 public class MyApp {
 
     private DataManager dataManager;
+    private Logger logger;
     private ProprietaryFramework framework;
 
-    /**
-     * Start of a basic app implementation.
-     */
     public MyApp() {
         dataManager = new DataManager();
         framework = new ProprietaryFramework();
+        logger = Logger.getLogger("myapp");
     }
 
     public void getUser(HttpServletRequest request, Connection connection) {
-        // add implementation later
+        String user = request.getParameter("user");
+        try {
+            dataManager.getUser(connection, user);
+        } catch (SQLException ex) {
+            logger.log(Level.SEVERE, ex.getMessage());
+        }
     }
 
     public void saveData(HttpServletRequest request) throws IOException {
-        // add implementation later
+        String data = request.getParameter("data");
+        File tempDir;
+        tempDir = File.createTempFile("", ".");
+        tempDir.delete();
+        tempDir.mkdir();
+        Files.exists(Paths.get("/tmp/", data));
     }
 
     public void processInput() {
