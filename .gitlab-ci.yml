@@ -5,8 +5,7 @@ variables:
   GIT_DEPTH: 0
 sonarqube-check:
   script:
-    - mvn verify sonar:sonar 
-    #-Dsonar.qualitygate.wait=true
+    - mvn verify sonar:sonar -Dsonar.qualitygate.wait=true
   allow_failure: true
   only:
     - merge_requests
