@@ -13,7 +13,7 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <sonar.projectKey>demo:security</sonar.projectKey>
-    <sonar.projectName>Forrester SAST Wave</sonar.projectName>
+    <sonar.projectName>My Java App</sonar.projectName>
   </properties>
   <dependencies>
     <dependency>

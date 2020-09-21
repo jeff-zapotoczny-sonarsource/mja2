@@ -1,56 +1,41 @@
 package demo.security;
 
-import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.sql.Connection;
-import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 
 public class MyApp {
 
     private DataManager dataManager;
-    private Logger logger;
     private ProprietaryFramework framework;
 
+    /**
+     * Start of a basic app implementation.
+     */
     public MyApp() {
         dataManager = new DataManager();
         framework = new ProprietaryFramework();
-        logger = Logger.getLogger("myapp");
     }
 
     public void getUser(HttpServletRequest request, Connection connection) {
-/*         String user = request.getParameter("user");
-        try {
-            dataManager.getUser(connection, user);
-        } catch (SQLException ex) {
-            logger.log(Level.SEVERE, ex.getMessage());
-        } */
+        // add implementation later
     }
 
     public void saveData(HttpServletRequest request) throws IOException {
-        /* String data = request.getParameter("data");
-        File tempDir;
-        tempDir = File.createTempFile("", ".");
-        tempDir.delete();
-        tempDir.mkdir();
-        Files.exists(Paths.get("/tmp/", data)); */
+        // add implementation later
     }
 
     public void processInput() {
-/*         String myInput = framework.getInput("stuff");
+        String myInput = framework.getInput("stuff");
         framework.processParam(myInput);
-        dataManager.storeData(myInput); */
+        dataManager.storeData(myInput);
     }
 
     public void processInputSafely() {
-/*         String myInput = framework.getInput("stuff");
+        String myInput = framework.getInput("stuff");
         framework.verifyData(myInput);
         framework.processParam(myInput);
-        dataManager.storeData(myInput); */
+        dataManager.storeData(myInput);
     }
 }
