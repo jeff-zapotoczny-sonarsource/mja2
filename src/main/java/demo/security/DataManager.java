@@ -21,13 +21,6 @@ public class DataManager {
         }
     }
 
-    public String getThing(Connection connection, String param) throws SQLException {
-        try (Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("select thing from others WHERE param=" + param);) {
-            return rs.getString(1);
-        }
-    }
-
     public void storeData(String data) {
         framework.storeData(data);
     }
