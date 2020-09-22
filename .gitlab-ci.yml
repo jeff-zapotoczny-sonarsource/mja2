@@ -5,7 +5,7 @@ variables:
   GIT_DEPTH: 0
 sonarqube-check:
   script:
-    - mvn verify sonar:sonar -Dsonar.qualitygate.wait=true
+    - mvn verify sonar:sonar -Dsonar.qualitygate.wait=true -Dsonar.security.sources.javasecurity.S2076=customSecurityConfig.json -Dsonar.security.sanitizers.javasecurity.S2076=customSecurityConfig.json -Dsonar.security.passthroughs.javasecurity.S2076=customSecurityConfig.json -Dsonar.security.sinks.javasecurity.S2076=customSecurityConfig.json
   allow_failure: false
   only:
     - merge_requests

@@ -22,8 +22,8 @@ pipeline {
           withMaven(maven: 'M3') {
             script {
 	            // all analysis now automatically parameterized
-              sh "mvn sonar:sonar"
-              //sh "mvn verify sonar:sonar -Dsonar.security.sources.javasecurity.S2076=customSecurityConfig.json -Dsonar.security.sanitizers.javasecurity.S2076=customSecurityConfig.json -Dsonar.security.passthroughs.javasecurity.S2076=customSecurityConfig.json -Dsonar.security.sinks.javasecurity.S2076=customSecurityConfig.json"
+              //sh "mvn sonar:sonar"
+              sh "mvn verify sonar:sonar -Dsonar.security.sources.javasecurity.S2076=customSecurityConfig.json -Dsonar.security.sanitizers.javasecurity.S2076=customSecurityConfig.json -Dsonar.security.passthroughs.javasecurity.S2076=customSecurityConfig.json -Dsonar.security.sinks.javasecurity.S2076=customSecurityConfig.json"
             }
           }
         }
