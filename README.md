@@ -16,7 +16,7 @@ Project consists of a basic start of an app implementation with a number of Vuln
 
 ## Custom security configuration 
 There is a sample framework class with a bunch of methods that demonstrate custom injections.
-- The method without sanitization (`doSomething()`) has an injection vulnerability
-- The method with custom sanitization (`doSomethingSanitized()`) has no vulnerability
+- The method without sanitization has an injection vulnerability
+- The method with custom sanitization has no vulnerability
 
-The custom security configuration file is in the root directory [here](s3649JavaSqlInjectionConfig.json)
+The custom security configuration file is in the root directory. Thie script `runCustom.sh` will re-run analysis with the configuration in place so the vulnerability can be found.
