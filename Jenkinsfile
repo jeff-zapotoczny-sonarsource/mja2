@@ -12,7 +12,7 @@ pipeline {
         withSonarQubeEnv('SQServer') {
           withMaven(maven: 'M3') {
             script {
-	            // all analysis now automatically parameterized
+              // all analysis now automatically parameterized
               //sh "mvn sonar:sonar"
               sh "mvn clean verify sonar:sonar -Dsonar.security.sources.javasecurity.S2076=customSecurityConfig.json -Dsonar.security.sanitizers.javasecurity.S2076=customSecurityConfig.json -Dsonar.security.passthroughs.javasecurity.S2076=customSecurityConfig.json -Dsonar.security.sinks.javasecurity.S2076=customSecurityConfig.json"
             }
