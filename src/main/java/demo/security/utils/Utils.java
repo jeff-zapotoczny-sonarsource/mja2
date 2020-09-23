@@ -5,20 +5,12 @@ import java.security.KeyPairGenerator;
 import java.security.NoSuchAlgorithmException;
 import java.util.Random;
 
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletResponse;
-
 public class Utils {
 
     private Random rando;
 
     public Utils() {
-         this.rando = new Random();
-    }
-
-    public void modResponse(HttpServletResponse response) {
-        Cookie c = new Cookie("SECRET", "SECRET");
-        response.addCookie(c);
+        this.rando = new Random();
     }
 
     public KeyPair makeKey() {
@@ -34,7 +26,7 @@ public class Utils {
 
     public byte[] generateRandomBytes() {
         byte[] bytes = new byte[20];
-        rando.nextBytes(bytes); 
+        rando.nextBytes(bytes);
         return bytes;
     }
 }

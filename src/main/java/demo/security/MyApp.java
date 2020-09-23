@@ -9,7 +9,9 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 public class MyApp {
 
@@ -40,6 +42,11 @@ public class MyApp {
         tempDir.mkdir();
         Files.exists(Paths.get("/tmp/", data));
         // incomplete implementation
+    }
+
+    public void modResponse(HttpServletResponse response) {
+        Cookie c = new Cookie("SECRET", "SECRET");
+        response.addCookie(c);
     }
 
     public void processInput() {
