@@ -34,6 +34,15 @@ public class MyApp {
         }
     }
 
+    public void getThing(HttpServletRequest request, Connection connection) {
+        String thingId = request.getParameter("thingId");
+        try {
+            dataManager.getThing(connection, thingId);
+        } catch (SQLException ex) {
+            logger.log(Level.SEVERE, ex.getMessage());
+        }
+    }
+    
     public void saveData(HttpServletRequest request) throws IOException {
         String data = request.getParameter("data");
         File tempDir;

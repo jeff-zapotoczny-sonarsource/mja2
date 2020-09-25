@@ -21,6 +21,13 @@ public class DataManager {
         }
     }
 
+    public String getThing(Connection connection, String thingId) throws SQLException {
+        try (Statement statement = connection.createStatement();
+                ResultSet resultSet = statement
+                        .executeQuery("SELECT thing FROM things WHERE thingId = '" + thingId + "'");) {
+            return resultSet.getString(1);
+        }
+    }
     public void storeData(String data) {
         framework.storeData(data);
     }
