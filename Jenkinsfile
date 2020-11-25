@@ -24,7 +24,7 @@ pipeline {
         timeout(time: 1, unit: 'HOURS') {
           script {
             def qg = waitForQualityGate()
-            println qg.dump()
+            echo qg.toString()
           }
         }
       }
