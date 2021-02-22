@@ -4,7 +4,7 @@ pipeline {
     stage('SCM') {
       steps {
         // fetch master from origin so sonar scanner branch comparison works
-        sh "git fetch --all ${GIT_URL}"
+        sh "git fetch --all"
       }
     }
     stage('Build and SonarQube Analysis') {
