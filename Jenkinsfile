@@ -1,12 +1,12 @@
 pipeline {
   agent any
   stages {
-    stage('SCM') {
-      steps {
+    //stage('SCM') {
+    //  steps {
         // fetch master from origin so sonar scanner branch comparison works
-        sh "git fetch --all"
-      }
-    }
+    //    sh "git fetch --all ${GIT_URL} +refs/heads:refs/remotes/origin"
+    //  }
+    //}
     stage('Build and SonarQube Analysis') {
       steps {
         withSonarQubeEnv('SQServer') {
