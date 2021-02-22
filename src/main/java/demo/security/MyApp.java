@@ -51,6 +51,7 @@ public class MyApp {
         tempDir.mkdir();
         Files.exists(Paths.get("/tmp/", data));
         // incomplete implementation
+        System.out.println("foo");
     }
 
     public void modResponse(HttpServletResponse response) {
