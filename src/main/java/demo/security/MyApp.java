@@ -51,12 +51,12 @@ public class MyApp {
         tempDir.mkdir();
         Files.exists(Paths.get("/tmp/", data));
         // incomplete implementation
-        System.out.println("foo");
     }
 
     public void modResponse(HttpServletResponse response) {
         Cookie c = new Cookie("SECRET", "SECRET");
         response.addCookie(c);
+        System.out.println("foo!");
     }
 
     public void processInput() {
