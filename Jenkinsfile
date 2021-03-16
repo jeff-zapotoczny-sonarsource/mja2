@@ -9,7 +9,7 @@ pipeline {
     //}
     stage('Build and SonarQube Analysis') {
       steps {
-        withSonarQubeEnv('SQServer') {
+        withSonarQubeEnv('SonarQube') {
           withMaven(maven: 'M3') {
             script {
               // all analysis now automatically parameterized
