@@ -28,6 +28,7 @@ public class DataManager {
             return resultSet.getString(1);
         }
     }
+    
     public void storeData(String data) {
         framework.storeData(data);
     }
